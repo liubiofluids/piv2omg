@@ -17,14 +17,12 @@ function [varargout] = Cluster2PIV(folder, flname, flcord, fldisp, winsz, vararg
 %   winsz = [m, n] is a 1x2 array of integers.
 %   vomg is a k x 3 double array.
 %   vz = is a 3D double array, e.g., k x m x n. 
-%   r2zdepthdat.mat in the working folder is the specific calibration data,
-%   which should be customized to the corresponding imaging setup.
 %
 %   Example
 %   -------
 %   [vomg] = Cluster2PIV('./testframes/', 'testframe%d.jpg',
 %   './testdata/vcord.txt', './testdata/vdisp.txt', [120, 120]);
-%   
+%
 %   
 
 varargout{1}=[];
